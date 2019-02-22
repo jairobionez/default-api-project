@@ -47,7 +47,6 @@ namespace DefaultProject.Domain.Services.UserService
 
         public UpdateUserResponse Put(User obj)
         {
-            // CONCERTAR
             User user = _userRepository.GetById(obj.Id);
 
             if (user == null)

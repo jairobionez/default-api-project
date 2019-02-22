@@ -24,7 +24,7 @@ namespace DefaultProject.Domain.Entities
 
         public string FullName()
         {
-            return this.Name.FirstName + " " + this.Name.LastName;
+            return $"{this.Name.FirstName} {this.Name.LastName}";
         }
     }
 }

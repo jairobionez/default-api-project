@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>DefaultProject.Application</name>
+    </assembly>
+    <members>
+        <member name="M:DefaultProject.Application.Controllers.v1.UserController.GetUser">
+            <summary>
+            Busca todos os usuários
+            </summary>
+            <returns>Retorna um lista contendo todos os usuários</returns>
+        </member>
+        <member name="M:DefaultProject.Application.Controllers.v1.UserController.GetUserById(System.Int64)">
+            <summary>
+            Retorna um usuário por sua chave de indentificação
+            </summary>
+            <param name="key"></param>
+            <returns>Retorna o usuário especifico</returns>
+        </member>
+        <member name="M:DefaultProject.Application.Controllers.v1.UserController.InsertUser(DefaultProject.Domain.Entities.User)">
+            <summary>
+            Inseri um usuário
+            </summary>
+            <param name="user"></param>
+            <returns>Retorna o nome completo do usuário e status da operação</returns>
+        </member>
+        <member name="M:DefaultProject.Application.Controllers.v1.UserController.UpdateUser(DefaultProject.Domain.Entities.User)">
+            <summary>
+            Atualiza um usuário
+            </summary>
+            <param name="user"></param>
+            <returns>Retorna o usuário atualizado</returns>
+        </member>
+        <member name="M:DefaultProject.Application.Controllers.v1.UserController.DeleteUser(System.Int64)">
+            <summary>
+            Delete um usuário por sua chave de identificação
+            </summary>
+            <param name="id"></param>
+            <returns>Retorna o status da operação</returns>
+        </member>
+    </members>
+</doc>

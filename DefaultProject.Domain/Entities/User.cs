@@ -21,5 +21,10 @@ namespace DefaultProject.Domain.Entities
         public Name Name { get;  set; }
 
         public Address Address { get; set; }
+
+        public string FullName()
+        {
+            return this.Name.FirstName + " " + this.Name.LastName;
+        }
     }
 }

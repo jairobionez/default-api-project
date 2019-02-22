@@ -18,7 +18,7 @@ namespace DefaultProject.Domain.Arguments.UserArg
         {
             return new PostUserResponse()
             {
-                FullName = user.Name.FirstName + " " + user.Name.LastName,
+                FullName = user.FullName(),
                 Message = "Usuário inserido com sucesso!"
             };
         }

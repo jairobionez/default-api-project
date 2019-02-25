@@ -4,10 +4,7 @@ using DefaultProject.Domain.Arguments.UserArg;
 using DefaultProject.Domain.Entities;
 using DefaultProject.Domain.Services.UserService;
 using DefaultProject.Infra.Data.Transactions;
-using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Net;
 using System.Net.Http;
 using System.Threading.Tasks;
 using System.Web.Http;
@@ -34,7 +31,6 @@ namespace DefaultProject.Application.Controllers.v1
         [ResponseType(typeof(List<User>))]
         public async Task<HttpResponseMessage> GetUser()
         {
-
             var result = _userService.Get();
 
             return await ResponseAsync(result, _userService);
@@ -64,7 +60,7 @@ namespace DefaultProject.Application.Controllers.v1
         [Route("")]
         [ResponseType(typeof(PostUserResponse))]
         public async Task<HttpResponseMessage> InsertUser(User user)
-        {         
+        {
             var result = _userService.Post(user);
 
             return await ResponseAsync(result, _userService);
@@ -79,7 +75,7 @@ namespace DefaultProject.Application.Controllers.v1
         [Route("")]
         [ResponseType(typeof(UpdateUserResponse))]
         public async Task<HttpResponseMessage> UpdateUser(User user)
-        {
+        {            
             var result = _userService.Put(user);
 
             return await ResponseAsync(result, _userService);

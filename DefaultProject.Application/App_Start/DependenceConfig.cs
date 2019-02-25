@@ -1,6 +1,5 @@
 ﻿using DefaultProject.Domain.Interfaces.Repositories.Base;
 using DefaultProject.Domain.Interfaces.Repositories.UserRepository;
-using DefaultProject.Domain.Interfaces.Services.Base;
 using DefaultProject.Domain.Services.UserService;
 using DefaultProject.Infra.Data.Context;
 using DefaultProject.Infra.Data.Repositories;
@@ -28,7 +27,7 @@ namespace DefaultProject.Application.App_Start
             container.Register<IUnitOfWork, UnitOfWork>(Lifestyle.Scoped);
 
             container.Register<IUserRepository, UserRepository>(Lifestyle.Scoped);
-            container.Register<IUserService, UserService>(Lifestyle.Scoped);
+            container.Register<IUserService, UserService>(Lifestyle.Scoped);            
 
             container.RegisterWebApiControllers(config);
             container.Verify();

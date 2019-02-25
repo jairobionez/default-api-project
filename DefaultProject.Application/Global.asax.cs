@@ -15,7 +15,7 @@ namespace DefaultProject.Application
         protected void Application_Start()
         {
             GlobalConfiguration.Configure(WebApiConfig.Register);
-            DependenceConfig.Register(GlobalConfiguration.Configuration);            
+            DependenceConfig.Register(GlobalConfiguration.Configuration);
 
             Database.SetInitializer<DefaultContext>(null);
         }

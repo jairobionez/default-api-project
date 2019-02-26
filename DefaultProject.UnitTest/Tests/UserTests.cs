@@ -101,10 +101,12 @@ namespace DefaultProject.UnitTest.Tests
             Assert.True(_userService.Invalid);            
         }
 
-        [Theory(DisplayName = "Should delete user")]
-        [InlineData(1)]
-        public void ShouldDeleteUser(long id)
+        [Fact(DisplayName = "Should delete user")]       
+        public void ShouldDeleteUser()
         {
+            // Arrange
+            long id = 3;
+
             // Act
             var result = _userService.Delete(id);
 

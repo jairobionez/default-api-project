@@ -1,16 +1,12 @@
 ﻿using DefaultProject.Domain.Entities;
-using DefaultProject.Domain.Interfaces.Repositories.Base;
 using DefaultProject.Domain.Interfaces.Repositories.UserRepository;
 using DefaultProject.Domain.Services.UserService;
 using DefaultProject.Domain.ValueObjects;
 using DefaultProject.UnitTest.FakeRepositories;
 using Moq;
 using SimpleInjector;
-using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using Xunit;
 
 namespace DefaultProject.UnitTest.Tests

@@ -14,28 +14,28 @@
             <summary>
             Retorna um usuário por sua chave de indentificação
             </summary>
-            <param name="key"></param>
+            <param name="key">Chave de identificação do usuário</param>
             <returns>Retorna o usuário especifico</returns>
         </member>
         <member name="M:DefaultProject.Application.Controllers.v1.UserController.InsertUser(DefaultProject.Domain.Entities.User)">
             <summary>
             Inseri um usuário
             </summary>
-            <param name="user"></param>
+            <param name="user">Dados do usuário</param>
             <returns>Retorna o nome completo do usuário e status da operação</returns>
         </member>
         <member name="M:DefaultProject.Application.Controllers.v1.UserController.UpdateUser(DefaultProject.Domain.Entities.User)">
             <summary>
             Atualiza um usuário
             </summary>
-            <param name="user"></param>
+            <param name="user">Dados do usuário</param>
             <returns>Retorna o usuário atualizado</returns>
         </member>
         <member name="M:DefaultProject.Application.Controllers.v1.UserController.DeleteUser(System.Int64)">
             <summary>
             Delete um usuário por sua chave de identificação
             </summary>
-            <param name="id"></param>
+            <param name="key">Chave de identificação do usuário</param>
             <returns>Retorna o status da operação</returns>
         </member>
     </members>

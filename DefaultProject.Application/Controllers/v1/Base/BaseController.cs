@@ -33,7 +33,7 @@ namespace DefaultProject.Application.Controllers.v1.Base
                     _uow.Commit();
 
                     return Request.CreateResponse(HttpStatusCode.OK, result);
-                }catch(Exception ex)
+                }catch(Exception)
                 {
                     return Request.CreateResponse(HttpStatusCode.InternalServerError, "Aconteceu um error interno, por favor contate o administrador.");
                 }

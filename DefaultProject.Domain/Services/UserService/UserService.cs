@@ -35,7 +35,6 @@ namespace DefaultProject.Domain.Services.UserService
 
         public PostUserResponse Post(User obj)
         {
-
             if (obj.Name == null)
                 AddNotification("Name", "Nome e sobrenome obrigatórios");
 
@@ -54,6 +53,7 @@ namespace DefaultProject.Domain.Services.UserService
             else
             {
                 user.Name = obj.Name;
+                user.Address = obj.Address;
             }
 
             if (Invalid)
@@ -74,6 +74,5 @@ namespace DefaultProject.Domain.Services.UserService
 
             return new ResponseBase();
         }
-
     }
 }

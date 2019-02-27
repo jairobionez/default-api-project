@@ -20,7 +20,7 @@ namespace DefaultProject.Infra.Data.Transactions
         public bool Commit()
         {
             try
-            {
+            {                
                 _context.SaveChanges();
                 return true;
             }

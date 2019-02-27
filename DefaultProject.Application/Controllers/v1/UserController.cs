@@ -39,7 +39,7 @@ namespace DefaultProject.Application.Controllers.v1
         /// <summary>
         /// Retorna um usuário por sua chave de indentificação
         /// </summary>
-        /// <param name="key"></param>
+        /// <param name="key">Chave de identificação do usuário</param>
         /// <returns>Retorna o usuário especifico</returns>
         [HttpGet]
         [Route("{key}")]
@@ -54,7 +54,7 @@ namespace DefaultProject.Application.Controllers.v1
         /// <summary>
         /// Inseri um usuário
         /// </summary>
-        /// <param name="user"></param>
+        /// <param name="user">Dados do usuário</param>
         /// <returns>Retorna o nome completo do usuário e status da operação</returns>
         [HttpPost]
         [Route("")]
@@ -69,7 +69,7 @@ namespace DefaultProject.Application.Controllers.v1
         /// <summary>
         /// Atualiza um usuário
         /// </summary>
-        /// <param name="user"></param>
+        /// <param name="user">Dados do usuário</param>
         /// <returns>Retorna o usuário atualizado</returns>
         [HttpPut]
         [Route("")]
@@ -84,14 +84,14 @@ namespace DefaultProject.Application.Controllers.v1
         /// <summary>
         /// Delete um usuário por sua chave de identificação
         /// </summary>
-        /// <param name="id"></param>
+        /// <param name="key">Chave de identificação do usuário</param>
         /// <returns>Retorna o status da operação</returns>
         [HttpDelete]
         [Route("{key}")]
         [ResponseType(typeof(ResponseBase))]
-        public async Task<HttpResponseMessage> DeleteUser(long id)
+        public async Task<HttpResponseMessage> DeleteUser(long key)
         {
-            var result = _userService.Delete(id);
+            var result = _userService.Delete(key);
 
             return await ResponseAsync(result,  _userService);
         }
